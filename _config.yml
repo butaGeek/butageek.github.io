@@ -11,11 +11,10 @@ email: hendryzhou889@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A site built by jekyll
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://butaeye.github.io" # the base hostname & protocol for your site
+url: "http://butaeye.github.io" # the base hostname & protocol for your site
 github_username: butaeye
 
 # Build settings
 sass:
   sass_dir: _sass
-include: ['_pages']
 markdown: kramdown
