@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: butaEye
+title: butaGeek
 email: hendryzhou889@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A site built by jekyll
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://butaeye.github.io" # the base hostname & protocol for your site
-github_username: butaeye
+url: "http://butageek.github.io" # the base hostname & protocol for your site
+github_username: butageek
 
 # Build settings
 sass:
