@@ -1,0 +1,128 @@
+$primary-color: #0099ff;
+
+body {
+  padding-top: 50px;
+}
+
+.container-fluid {
+  padding: 50px;
+}
+
+.navbar-default {
+  .navbar-toggle {
+    border-color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+    }
+
+    .icon-bar {
+      background-color: #ffffff;
+    }
+
+    &:hover .icon-bar {
+      background-color: $primary-color;
+    }
+
+    &:focus .icon-bar {
+      background-color: $primary-color;
+    }
+  }
+
+  .navbar-brand {
+    color: #fff;
+
+    &:focus, &:hover {
+      color: #fff;
+    }
+  }
+
+  .navbar-nav li a {
+    color: #fff;
+
+    &:focus, &:hover {
+      color: $primary-color;
+      background-color: #fff;
+    }
+  }
+}
+
+.navbar {
+  background-color: $primary-color;
+  z-index: 9999;
+  border: 0;
+}
+
+.jumbotron {
+  position: relative;
+  background-color: $primary-color;
+  color: #ffffff;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(/img/header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #21abc7;
+  }
+
+  .content {
+    position: relative;
+  }
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.logo-sm {
+  font-size: 50px;
+  color: $primary-color;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+#about .label {
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.thumbnail p::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin: 10px auto;
+  background-color: #f6f6f6;
+}
