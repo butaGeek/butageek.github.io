@@ -1,17 +1,14 @@
-$primary-color: #0099ff;
+$primary-color: #00BCD4;
 
 body {
   padding-top: 50px;
 }
 
 a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
+  &, &:hover, &:visited, &:active {
+    text-decoration: none !important;
   }
 }
-
 
 .container-fluid {
   padding: 50px;
@@ -21,6 +18,7 @@ a {
   background-color: $primary-color;
   z-index: 9999;
   border: 0;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.7);
 
   .navbar-toggle {
     border-color: #ffffff;
@@ -95,7 +93,7 @@ a {
 }
 
 .bg-grey {
-  background-color: #f0f0f0;
+  background-color: #F6F8F8;
 }
 
 .logo-sm {
@@ -148,7 +146,7 @@ a {
         position: relative;
         background: rgba(0,0,0,0.6);
         transform: translateY(-100px);
-        transition: all .2s ease-in-out;
+        transition: all .3s ease-in-out;
       }
 
       a {
@@ -172,6 +170,53 @@ a {
 
     &:hover h4 {
       transform: translateY(0);
+    }
+  }
+}
+
+#playground {
+  a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 35px 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 30px;
+    transition: all .2s ease-in-out;
+    color: inherit;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    width: 160px;
+    height: 160px;
+
+    h3 {
+      align-self: center;
+      color: $primary-color;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      padding: 10px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      transition: all .4s ease-in-out;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+
+      p {
+        align-self: center;
+      }
+    }
+
+    &:hover .overlay {
+      opacity: 1;
     }
   }
 }
