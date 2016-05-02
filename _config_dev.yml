@@ -20,3 +20,5 @@ linkedin_url: "https://ca.linkedin.com/in/hendryzhou"
 sass:
   sass_dir: _sass
 markdown: kramdown
+
+excerpt_separator: "<!--excerpt-->"

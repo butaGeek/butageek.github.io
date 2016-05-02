@@ -1,13 +1,8 @@
 $primary-color: #00BCD4;
+$seperator-color: #D3D7CF;
 
 body {
   padding-top: 50px;
-
-  .post {
-    h1 {
-      text-align: center;
-    }
-  }
 
   a {
     &, &:hover, &:visited, &:active {
@@ -259,7 +254,7 @@ body {
 footer {
   .container-fluid {
     padding-top: 20px;
-    border-top: 1px solid #D3D7CF;
+    border-top: 1px solid $seperator-color;
   }
 
   .info-1 {
@@ -268,5 +263,35 @@ footer {
 
   .info-2 {
     float: right;
+  }
+}
+
+#blog {
+  .content {
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+
+    img {
+      position: absolute;
+      width: 200px;
+      height: auto;
+      top: -40px;
+      right: -85px;
+    }
+  }
+}
+
+#post {
+  padding-top: 30px;
+
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
   }
 }

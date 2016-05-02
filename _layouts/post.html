@@ -2,12 +2,13 @@
 layout: default
 ---
 
-<div class="container-fluid post">
+<div id="post" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
       <h1>{{ page.title }}</h1>
-      <time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
       {{ content }}
+      <hr>
+      <time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
     </div>
   </div>
 </div>

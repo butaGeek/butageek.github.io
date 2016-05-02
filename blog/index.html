@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<div class="container-fluid blog">
+<div id="blog" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-12">
       {% for post in site.posts %}
-      <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <div class="content">
+        <img src="/img/post.png" alt="">
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <hr>
+        {{ post.excerpt }}
+        <hr>
+        <time class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</time>
+      </div>
       {% endfor %}
       <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
     </div>
