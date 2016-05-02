@@ -2,17 +2,23 @@ $primary-color: #00BCD4;
 
 body {
   padding-top: 50px;
-}
 
-a {
-  &, &:hover, &:visited, &:active {
-    text-decoration: none !important;
+  .post {
+    h1 {
+      text-align: center;
+    }
   }
-}
 
-h2 {
-  color: $primary-color;
-  text-shadow: 3px 5px 5px rgba(0,0,0,0.3);
+  a {
+    &, &:hover, &:visited, &:active {
+      text-decoration: none !important;
+    }
+  }
+
+  h2 {
+    color: $primary-color;
+    text-shadow: 3px 5px 5px rgba(0,0,0,0.3);
+  }
 }
 
 .container-fluid {
@@ -247,5 +253,20 @@ h2 {
   img {
     width: 200px;
     height: 200px;
+  }
+}
+
+footer {
+  .container-fluid {
+    padding-top: 20px;
+    border-top: 1px solid #D3D7CF;
+  }
+
+  .info-1 {
+    float: left;
+  }
+
+  .info-2 {
+    float: right;
   }
 }
