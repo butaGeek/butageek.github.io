@@ -10,7 +10,8 @@ layout: default
         <img src="/img/post.png" alt="">
         <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <hr>
-        {{ post.excerpt }}...
+        {{ post.excerpt }}
+        <a href="{{ post.url | prepend: site.baseurl }}">... <i>continue reading</i></a>
         <hr>
         <time class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</time>
       </div>
