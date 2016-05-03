@@ -180,6 +180,27 @@ body {
   }
 }
 
+#blog-link {
+  a {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+
+    h4 {
+      color: $primary-color;
+      align-self: center;
+    }
+  }
+}
+
 #playground {
   a {
     position: relative;
