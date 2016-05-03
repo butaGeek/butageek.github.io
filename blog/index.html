@@ -7,7 +7,6 @@ layout: default
     <div class="col-sm-12">
       {% for post in site.posts %}
       <div class="content">
-        <img src="/img/post.png" alt="">
         <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <hr>
         {{ post.excerpt }}
