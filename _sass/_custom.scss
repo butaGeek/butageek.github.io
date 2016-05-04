@@ -5,15 +5,29 @@ body {
   padding-top: 50px;
 }
 
-a {
-  &, &:hover, &:visited, &:active {
-    text-decoration: none !important;
+#about,
+#services,
+#showcase,
+#playground,
+#contact,
+#blog,
+#blog-link {
+  a {
+    &, &:hover, &:visited, &:active {
+      text-decoration: none !important;
+    }
   }
 }
 
-h2 {
-  color: $primary-color;
-  text-shadow: 3px 5px 5px rgba(0,0,0,0.3);
+#about,
+#services,
+#showcase,
+#playground,
+#contact {
+  h2 {
+    color: $primary-color;
+    text-shadow: 3px 5px 5px rgba(0,0,0,0.3);
+  }
 }
 
 .flex-wrapper {
@@ -312,7 +326,7 @@ footer {
 #post {
   padding-top: 30px;
 
-  h1 {
+  .title {
     margin-bottom: 20px;
     text-align: center;
   }
