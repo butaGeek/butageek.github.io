@@ -5,14 +5,16 @@
   categories: jekyll markdown
 ---
 
+## Introduction
+
 Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
 <!--excerpt-->
 
 For full reference, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
-# Syntax
+## Syntax
 
-## Headers
+### Headers
 
 ```
 # h1
@@ -50,9 +52,9 @@ __bold__
 
 **bold**
 
-## Lists
+### Lists
 
-### Unordered
+#### Unordered
 
 ```
 * item 1
@@ -66,7 +68,7 @@ __bold__
   * item 2a
   * item 2b
 
-### Ordered
+#### Ordered
 
 ```
 1. item 1
@@ -82,7 +84,7 @@ __bold__
   * item 3a
   * item 3b
 
-## Images
+### Images
 
 ```
 ![alt text](image url)
@@ -90,7 +92,7 @@ __bold__
 
 ![alt text](http://lorempixel.com/g/200/200/)
 
-## Links
+### Links
 
 ```
 [link](link url)
@@ -98,7 +100,7 @@ __bold__
 
 [link](http://lorempixel.com/g/200/200/)
 
-## Blockquotes
+### Blockquotes
 
 ```
 >Lorem ipsum dolor sit amet.
@@ -106,7 +108,7 @@ __bold__
 
 >Lorem ipsum dolor sit amet.
 
-## Inline Code
+### Inline Code
 
 ```
 `code`
@@ -114,9 +116,11 @@ __bold__
 
 `code`
 
-# GitHub Flavored Markdown
+## GitHub Flavored Markdown
 
-## Syntax Highlighting
+**Note** that some of them aren't part of the core Markdown spec, but they are part of GFM and Markdown on **GitHub** does support them. 
+
+### Syntax Highlighting
 
 ```
 ```javascript
@@ -135,7 +139,7 @@ function fancyAlert(arg) {
 }
 ```
 
-## Task Lists
+### Task Lists
 
 ```
 - [x] task 1
@@ -147,7 +151,7 @@ function fancyAlert(arg) {
 - [x] task 2
 - [ ] task 3
 
-## Tables
+### Tables (NOT core Markdown spec)
 
 ```
 First Header | Second Header
@@ -156,13 +160,7 @@ Lorem ipsum dolor. | Lorem ipsum dolor.
 Lorem ipsum dolor sit. | Lorem ipsum dolor sit.
 ```
 
-First Header | Second Header
------------- | -------------
-Lorem ipsum dolor. | Lorem ipsum dolor.
-Lorem ipsum dolor sit. | Lorem ipsum dolor sit.
-
-
-## Strikethrough
+### Strikethrough
 
 ```
 ~~strikethrough~~
@@ -170,12 +168,12 @@ Lorem ipsum dolor sit. | Lorem ipsum dolor sit.
 
 ~~strikethrough~~
 
-## Emoji
+### Emoji (NOT core Markdown spec)
 
 ```
 :emojicode:
 ```
 
-:+1:
+## After Words
 
 check out [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/)

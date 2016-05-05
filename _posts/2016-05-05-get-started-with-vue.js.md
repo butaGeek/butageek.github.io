@@ -2,7 +2,7 @@
   layout: post
   title: Get Started with Vue.js
   tags: 
-  categories: Vue.js
+  categories: MVVM javascript Vue.js
 ---
 
 ## Introduction
@@ -37,13 +37,17 @@ So let's go over the whole process which is up-to-date.
 
 Install vue, vue-resource (optional), and bootstrap (optional)
 
-`npm install vue vue-resource bootstrap`
+```
+$ npm install vue vue-resource bootstrap
+```
 
 **Step 2**
 
 Create *index.html* and *app.js*
 
-`touch index.html app.js`
+```
+$ touch index.html app.js
+```
 
 **Step 3**
 
