@@ -1,7 +1,7 @@
 ---
   layout: post
   title: Deploy Ruby App on Heroku
-  tags: 
+  tags:
   categories: ruby heroku
 ---
 
@@ -9,7 +9,7 @@
 
 [Heroku](https://www.heroku.com/home) is a cloud platform for hosting apps. It offers unlimited free container for easy app deployment. <!--excerpt-->The down side is that the free app can **only be active up to 18 hours per day**. So it's an ideal place for demo or small scale private apps.
 
-### Environment
+## Environment
 
 ```
 OS: Ubuntu 16.04 LTS
