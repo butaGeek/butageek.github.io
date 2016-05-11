@@ -1,94 +1,82 @@
 $primary-color: #00BCD4;
 $seperator-color: #D3D7CF;
-
 body {
   padding-top: 50px;
 }
-
 #about,
-#services,
-#showcase,
-#playground,
-#contact,
 #blog,
-#blog-link {
+#blog-link,
+#contact,
+#experience,
+#playground,
+#services {
   a {
-    &, &:hover, &:visited, &:active {
+    &,
+    &:active,
+    &:hover,
+    &:visited {
       text-decoration: none !important;
     }
   }
 }
-
 #about,
-#services,
-#showcase,
+#contact,
+#experience,
 #playground,
-#contact {
+#services {
   h2 {
     color: $primary-color;
     text-shadow: 3px 5px 5px rgba(0,0,0,0.3);
   }
 }
-
 .flex-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .container-fluid {
   padding: 50px;
 }
-
 .navbar-default {
   background-color: $primary-color;
   z-index: 9999;
   border: 0;
   box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-
   .navbar-toggle {
     border-color: #ffffff;
-
     &:hover {
       background-color: #ffffff;
     }
-
     &:focus {
       background-color: #ffffff;
     }
-
     .icon-bar {
       background-color: #ffffff;
     }
-
     &:hover .icon-bar {
       background-color: $primary-color;
     }
-
     &:focus .icon-bar {
       background-color: $primary-color;
     }
   }
-
   .navbar-brand {
     color: #fff;
-
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: #fff;
     }
   }
-
   .navbar-nav li a {
     color: #fff;
-
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: $primary-color;
       background-color: #fff;
     }
   }
 }
-
 .jumbotron {
   position: relative;
   background-color: $primary-color;
@@ -96,12 +84,11 @@ body {
   margin-bottom: 0;
   padding-top: 100px;
   padding-bottom: 200px;
-  background-image: url(/img/header.jpg);
+  background-image: url("/img/header.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
   &::before {
     position: absolute;
     content: "";
@@ -113,32 +100,88 @@ body {
     left: 0;
     background-color: #21abc7;
   }
-
   .content {
     position: relative;
-
     h1 {
       text-shadow: 0 0 10px #fff;
     }
   }
 }
-
 .bg-grey {
   background-color: #F6F8F8;
 }
-
 .logo-sm {
   font-size: 50px;
   color: $primary-color;
 }
-
 #about .label {
   display: inline-block;
   font-size: 16px;
   margin: 3px;
 }
-
-#showcase {
+#experience {
+  .timeline {
+    position: relative;
+    &::before {
+      background-color: #e2e8e9;
+      bottom: 0;
+      content: "";
+      left: 50%;
+      position: absolute;
+      right: 50%;
+      top: 0;
+      width: 2px;
+    }
+    .event {
+      margin-top: 50px;
+      &.reverse {
+        .my-badge {
+          float: right;
+        }
+        .desc {
+          text-align: right;
+          h3 {
+            &::before {
+              left: auto;
+              right: -11px;
+            }
+          }
+        }
+      }
+      .my-badge {
+        padding-left: 40px;
+        padding-right: 40px;
+        .wrapper {
+          max-width: 250px;
+          margin-left: auto;
+          margin-right: auto;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .desc {
+        text-align: left;
+        padding-left: 40px;
+        padding-right: 40px;
+        h3 {
+          margin-top: 0;
+          &::before {
+            background-color: #fff;
+            border: 4px solid #9db0b5;
+            border-radius: 50%;
+            content: "";
+            height: 20px;
+            width: 20px;
+            top: 0;
+            left: -9px;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
   .thumbnail {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -148,17 +191,14 @@ body {
     border: none;
     overflow: hidden;
     position: relative;
-
     img {
       width: 100%;
       height: auto;
-      transition: all .4s linear;
+      transition: all 0.4s linear;
     }
-
     &:hover img {
       transform: scale(1.2);
     }
-
     .overlay {
       width: 100%;
       height: 100%;
@@ -167,42 +207,36 @@ body {
       left: 0;
       opacity: 0;
       background-color: rgba(0,0,0,0.5);
-      transition: all .4s ease-in-out;
-
+      transition: all 0.4s ease-in-out;
       h4 {
         color: #fff;
         padding: 10px;
         position: relative;
         background: rgba(0,0,0,0.6);
         transform: translateY(-100px);
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
       }
-
       a {
         display: inline-block;
         color: #fff;
         border: 1px solid #fff;
         background-color: transparent;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         margin-top: 5%;
         padding: 7px 14px;
-
         &:hover {
           box-shadow: 0 0 5px #fff;
         }
       }
     }
-
     &:hover .overlay {
       opacity: 1;
     }
-
     &:hover h4 {
       transform: translateY(0);
     }
   }
 }
-
 #blog-link {
   a {
     position: fixed;
@@ -216,14 +250,12 @@ body {
     width: 80px;
     height: 80px;
     z-index: 999;
-
     h4 {
       color: $primary-color;
       align-self: center;
     }
   }
 }
-
 #playground {
   a {
     position: relative;
@@ -233,17 +265,15 @@ body {
     border-radius: 50%;
     background-color: #fff;
     padding: 30px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: inherit;
     box-shadow: 0 3px 5px rgba(0,0,0,0.3);
     width: 160px;
     height: 160px;
-
     h3 {
       align-self: center;
       color: $primary-color;
     }
-
     .overlay {
       width: 100%;
       height: 100%;
@@ -256,59 +286,49 @@ body {
       padding: 10px;
       background-color: $primary-color;
       border-radius: 50%;
-      transition: all .4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       color: #fff;
       text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-
       p {
         align-self: center;
       }
     }
-
     &:hover .overlay {
       opacity: 1;
     }
   }
 }
-
 #contact {
   ul {
     list-style-type: none;
     padding-left: 0;
     text-align: left;
     float: left;
-
     li {
       padding: 5px;
-
       img {
         width: 40px;
         height: 40px;
       }
     }
   }
-
   img {
     width: 200px;
     height: 200px;
   }
 }
-
 footer {
   .container-fluid {
     padding-top: 20px;
     border-top: 1px solid $seperator-color;
   }
-
   .info-1 {
     float: left;
   }
-
   .info-2 {
     float: right;
   }
 }
-
 #blog {
   .content {
     position: relative;
@@ -321,12 +341,28 @@ footer {
     box-shadow: 0 3px 5px rgba(0,0,0,0.3);
   }
 }
-
 #post {
   padding-top: 30px;
-
   .title {
     margin-bottom: 20px;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #experience {
+    .timeline {
+      &::before {
+        display: none;
+      }
+      .event {
+        .desc {
+          padding-top: 40px;
+          text-align: center !important;
+          h3::before {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
