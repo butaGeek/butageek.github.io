@@ -6,11 +6,11 @@
 ---
 ## Introduction
 
-Ruby on Rails ship with a small database called [sqlite3](https://www.sqlite.org/) by default, but it's not ideal for production grade database.<!--excerpt--> [Heroku](https://www.heroku.com/home) provides [PostgreSQL](http://www.postgresql.org/) instead. [Here](https://devcenter.heroku.com/articles/sqlite3) is more detail.
+Ruby on Rails ship with a small database called [sqlite3](https://www.sqlite.org/) by default, but it's not ideal for production grade database.<!--excerpt--> [PostgreSQL](http://www.postgresql.org/) is an advanced, open source object-relational database system which has the main goal of being standards-compliant and extensible.
 
-In order to [Deploy Ruby App on Heroku](http://butageek.github.io/ruby/heroku/2016/05/05/deploy-ruby-app-on-Heroku.html), you need to either use PostgreSQL when starting a new Rails app, or convert existing application manually.
+In order to user PostgreSQL, you need either use PostgreSQL when starting a new Rails app, or convert existing application manually.
 
-## Run Rails on PostgreSQL
+## Use PostgreSQL
 
 ### Create a new app
 
@@ -42,9 +42,7 @@ Then run:
 $ bundle install
 ```
 
-**NOTICE**
-
-If you are encountering an error `Gem::Ext::BuildError: ERROR: Failed to build gem native extension`, it's probably because you don't have PostgreSQL installed and the system lacks `libpq-dev` package.
+**Note:** If you encounter `Gem::Ext::BuildError: ERROR: Failed to build gem native extension` error, it's probably because you don't have PostgreSQL installed and the system lacks `libpq-dev` package.
 
 To solve this, run:
 
@@ -113,9 +111,7 @@ $ rake db:create
 $ rake db:migrate
 ```
 
-**NOTICE**
-
-If you get `FATAL:  role "your_username" does not exist` error, that is because there is no role for the current user.
+**Note:** If you get `FATAL:  role "your_username" does not exist` error, that is because there is no role for the current user.
 
 In order to create a role, you have to switch your current user to `postgres` by running:
 
@@ -130,3 +126,7 @@ $ createuser -s your_username
 ```
 
 The `-s` flag will create a super user.
+
+## After Words
+
+Check out [more details](https://devcenter.heroku.com/articles/sqlite3) on Heroku.

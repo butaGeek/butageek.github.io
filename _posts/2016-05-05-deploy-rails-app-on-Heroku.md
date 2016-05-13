@@ -1,8 +1,8 @@
 ---
   layout: post
-  title: Deploy Ruby App on Heroku
+  title: Deploy Rails App on Heroku
   tags:
-  categories: ruby heroku
+  categories: rails heroku postgresql
 ---
 
 ## Introduction
@@ -43,12 +43,19 @@ $ heroku login
 
 ## Prepare the app
 
-Prepare a local copy of the code. Here we use the [sample Heroku github repository](https://github.com/heroku/ruby-getting-started.git).
+Create a new app:
 
 ```
-$ git clone https://github.com/heroku/ruby-getting-started.git
-$ cd ruby-getting-started
+$ rails new myapp --database=postgresql
 ```
+
+Then move into you app directory:
+
+```
+$ cd myapp
+```
+
+If you already have an app created without specifying `--database=postgresql`, you have to [convert the database to postgresql](http://localhost:4000/rails/database/postgresql/2016/05/13/run-rails-on-postgres.html).
 
 ## Deploy the app
 
@@ -60,11 +67,31 @@ $ heroku create
 
 When you create an app, a git remote (called heroku) is also created and associated with your local git repository.
 
-Now we can deploy our code
+You can verify that the remote was added to your project by running:
+
+```
+$ git config --list | grep heroku
+remote.heroku.url=https://git.heroku.com/stormy-headland-74948.git
+remote.heroku.fetch=+refs/heads/*:refs/remotes/heroku/*
+```
+
+Deploy your code:
 
 ```
 $ git push heroku master
 ```
+
+## Migrate the database
+
+If you are using the database in your application you need to manually migrate the database by running:
+
+```
+$ heroku run rake db:migrate
+```
+
+Any commands after the `heroku run` will be executed on a Heroku [dyno](https://devcenter.heroku.com/articles/dynos).
+
+##  Visit your application
 
 Now the app is deployed and we can use the following command to open the website
 
@@ -74,4 +101,4 @@ $ heroku open
 
 ## After Words
 
-Check out [more details](https://devcenter.heroku.com/start) on [Heroku](https://www.heroku.com/home).
+Check out [more details](https://devcenter.heroku.com/articles/getting-started-with-rails4) on Heroku.
