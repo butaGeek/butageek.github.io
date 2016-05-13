@@ -9,6 +9,7 @@ body {
 #contact,
 #experience,
 #playground,
+#project,
 #services {
   a {
     &,
@@ -23,6 +24,7 @@ body {
 #contact,
 #experience,
 #playground,
+#project,
 #services {
   h2 {
     color: $primary-color;
@@ -32,7 +34,7 @@ body {
 .flex-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .container-fluid {
@@ -123,7 +125,7 @@ body {
   .timeline {
     position: relative;
     &::before {
-      background-color: #e2e8e9;
+      background-color: $primary-color;
       bottom: 0;
       content: "";
       left: 50%;
@@ -169,7 +171,7 @@ body {
           margin-top: 0;
           &::before {
             background-color: #fff;
-            border: 4px solid #9db0b5;
+            border: 4px solid $primary-color;
             border-radius: 50%;
             content: "";
             height: 20px;
@@ -182,6 +184,8 @@ body {
       }
     }
   }
+}
+#project {
   .thumbnail {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -261,40 +265,27 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 15px;
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 30px;
-    transition: all 0.2s ease-in-out;
+    margin: 1px;
+    background-color: $primary-color;
+    padding: 10px;
     color: inherit;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
-    width: 160px;
-    height: 160px;
-    h3 {
+    width: 120px;
+    height: 120px;
+    transition: all 0.2s linear;
+    h4 {
       align-self: center;
-      color: $primary-color;
-    }
-    .overlay {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      padding: 10px;
-      background-color: $primary-color;
-      border-radius: 50%;
-      transition: all 0.4s ease-in-out;
       color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-      p {
-        align-self: center;
-      }
+      overflow: hidden;
     }
-    &:hover .overlay {
-      opacity: 1;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+  .dev {
+    img {
+      height: 50px;
+      width: auto;
+      margin: 10px;
     }
   }
 }
