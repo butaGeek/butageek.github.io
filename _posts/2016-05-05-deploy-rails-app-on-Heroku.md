@@ -57,12 +57,19 @@ $ cd myapp
 
 If you already have an app created without specifying `--database=postgresql`, you have to [convert the database to postgresql](http://butageek.github.io/rails/database/postgresql/2016/05/13/run-rails-on-postgres.html).
 
+**Note:** If you just converted the database, you have to commit the changes so that Heroku will use the new database config:
+
+```
+$ git add .
+$ git commit -m "change database"
+```
+
 ## Deploy the app
 
 Create an app on Heroku
 
 ```
-$ heroku create
+$ heroku create myapp
 ```
 
 When you create an app, a git remote (called heroku) is also created and associated with your local git repository.
@@ -71,7 +78,7 @@ You can verify that the remote was added to your project by running:
 
 ```
 $ git config --list | grep heroku
-remote.heroku.url=https://git.heroku.com/stormy-headland-74948.git
+remote.heroku.url=https://git.heroku.com/myapp.git
 remote.heroku.fetch=+refs/heads/*:refs/remotes/heroku/*
 ```
 
@@ -87,6 +94,12 @@ If you are using the database in your application you need to manually migrate t
 
 ```
 $ heroku run rake db:migrate
+```
+
+You can seed the database with the following command
+
+```
+$ heroku run rake db:seed
 ```
 
 Any commands after the `heroku run` will be executed on a Heroku [dyno](https://devcenter.heroku.com/articles/dynos).

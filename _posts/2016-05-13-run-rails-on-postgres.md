@@ -33,7 +33,7 @@ gem 'sqlite3'
 Replace with this line:
 
 ```
-gem 'pg
+gem 'pg'
 ```
 
 Then run:
