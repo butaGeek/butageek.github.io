@@ -1,6 +1,6 @@
 ---
   layout: post
-  title: CSS JS Effects
+  title: Visual Effects
   tags:
   categories: html css js
 ---
