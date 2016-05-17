@@ -11,9 +11,12 @@ Thanks to new [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HT
 ## Example
 
 **Image Overlay**
-
-<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/4kp6ra2q/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/zL13fm3k/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **Image Zoom in/out**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/spdveztn/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+**Fly in Element**
+
+<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/xn0eLfds/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
