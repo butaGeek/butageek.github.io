@@ -249,13 +249,13 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $primary-color;
     box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
     width: 80px;
     height: 80px;
     z-index: 999;
     h4 {
-      color: $primary-color;
+      color: #fff;
       align-self: center;
     }
   }
