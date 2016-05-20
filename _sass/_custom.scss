@@ -3,14 +3,33 @@ $seperator-color: #D3D7CF;
 body {
   padding-top: 50px;
 }
+#blog-link {
+  a {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $primary-color;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    width: 75px;
+    height: 75px;
+    z-index: 999;
+    h4 {
+      color: #fff;
+      align-self: center;
+    }
+  }
+}
 #about,
 #blog,
 #blog-link,
 #contact,
 #experience,
 #playground,
-#project,
-#profession {
+#profession,
+#project {
   a {
     &,
     &:active,
@@ -24,8 +43,8 @@ body {
 #contact,
 #experience,
 #playground,
-#project,
-#profession {
+#profession,
+#project {
   h2 {
     color: $primary-color;
     text-shadow: 3px 5px 5px rgba(0,0,0,0.3);
@@ -238,25 +257,6 @@ body {
     }
     &:hover h4 {
       transform: translateY(0);
-    }
-  }
-}
-#blog-link {
-  a {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: $primary-color;
-    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
-    width: 80px;
-    height: 80px;
-    z-index: 999;
-    h4 {
-      color: #fff;
-      align-self: center;
     }
   }
 }
