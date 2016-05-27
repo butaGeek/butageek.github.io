@@ -324,10 +324,8 @@ footer {
 }
 #blog {
   .content {
-    position: relative;
     margin: 20px;
     padding: 10px;
-    float: left;
     max-width: 270px;
     height: auto;
     background-color: #fff;
@@ -356,6 +354,12 @@ footer {
           }
         }
       }
+    }
+  }
+  #blog {
+    .content {
+      max-width: inherit;
+      width: 100%;
     }
   }
 }

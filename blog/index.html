@@ -5,16 +5,18 @@ layout: default
 <div id="blog" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-12">
-      {% for post in site.posts %}
-      <div class="content">
-        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <hr>
-        {{ post.excerpt }}
-        <a href="{{ post.url | prepend: site.baseurl }}">... <i>continue reading</i></a>
-        <hr>
-        <time class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <div class="flex-wrapper">
+        {% for post in site.posts %}
+        <div class="content">
+          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          <hr>
+          {{ post.excerpt }}
+          <a href="{{ post.url | prepend: site.baseurl }}">... <i>continue reading</i></a>
+          <hr>
+          <time class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
       <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
     </div>
   </div>
