@@ -55,7 +55,7 @@ Then move into you app directory:
 $ cd myapp
 ```
 
-If you already have an app created without specifying `--database=postgresql`, you have to [convert the database to postgresql](http://butageek.github.io/rails/database/postgresql/2016/05/13/run-rails-on-postgres.html).
+If you already have an app created without specifying `--database=postgresql`, you have to [convert the database to postgresql]({{ site.baseurl }}/rails/database/postgresql/2016/05/13/run-rails-on-postgres.html).
 
 **Note:** If you just converted the database, you have to commit the changes so that Heroku will use the new database config:
 
