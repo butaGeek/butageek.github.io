@@ -12,16 +12,16 @@ Thanks to new [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HT
 
 **Image Overlay**
 
-<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/zL13fm3k/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/zL13fm3k/embedded/html,css,resources,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **Image Zoom in/out**
 
-<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/spdveztn/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/spdveztn/embedded/html,css,resources,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **Fly in Element**
 
-<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/xn0eLfds/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/hendryzhou889/xn0eLfds/embedded/html,css,resources,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 **JS lightbox**
 
-<iframe width="100%" height="500" src="//jsfiddle.net/hendryzhou889/su7dga02/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="500" src="//jsfiddle.net/hendryzhou889/su7dga02/embedded/html,css,resources,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
