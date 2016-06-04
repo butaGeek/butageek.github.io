@@ -10,12 +10,13 @@ title: butaGeek
 description: > # this means to ignore newlines until "baseurl:"
   A site to share knowledge and technical solutions
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://localhost:4000" # the base hostname & protocol for your site
-url: "http://butageek.github.io" # the base hostname & protocol for your site
+url: "http://localhost:4000" # the base hostname & protocol for your site
+# url: "http://butageek.github.io" # the base hostname & protocol for your site
 
 email: hendryzhou889@gmail.com
 github_username: butageek
 github_repo: https://github.com/butageek
+bitbucket_repo: https://bitbucket.org/butaGeek/
 linkedin_url: https://www.linkedin.com/in/hendryzhou
 googleplus_url: https://plus.google.com/+HendryZhou
 
