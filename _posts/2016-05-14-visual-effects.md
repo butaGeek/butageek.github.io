@@ -25,3 +25,7 @@ Thanks to new [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HT
 **JS lightbox**
 
 <iframe width="100%" height="500" src="//jsfiddle.net/hendryzhou889/su7dga02/embedded/html,css,resources,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+**Animate when scroll**
+
+<iframe width="100%" height="500" src="//jsfiddle.net/hendryzhou889/1p2Lsobs/embedded/html,js,resources,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
