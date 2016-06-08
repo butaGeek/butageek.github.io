@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
+# Site settcd ings
 title: butaGeek
 description: > # this means to ignore newlines until "baseurl:"
   A site to share knowledge and technical solutions
