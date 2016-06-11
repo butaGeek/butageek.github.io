@@ -29,3 +29,7 @@ Thanks to new [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HT
 **Animate when scroll**
 
 <iframe width="100%" height="500" src="//jsfiddle.net/hendryzhou889/1p2Lsobs/embedded/html,js,resources,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+**Dynamic sticky navbar**
+
+<iframe width="100%" height="400" src="//jsfiddle.net/hendryzhou889/Ly4w94hh/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
