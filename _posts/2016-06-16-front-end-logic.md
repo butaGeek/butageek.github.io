@@ -13,4 +13,4 @@ This article contains demos using css/js libraries/frameworks that illustrate ho
 
 **JS form validation**
 
-<iframe width="100%" height="500" src="//jsfiddle.net/61yx9vge/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="500" src="//jsfiddle.net/hendryzhou889/vw3k6oa7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
