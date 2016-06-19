@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Modify Image from Linux Terminal
-  tags:
-  categories: image linux terminal
+  tags: image linux terminal
+  categories: software
 ---
 ## Introduction
 

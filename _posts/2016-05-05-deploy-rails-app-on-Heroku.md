@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Deploy Rails App on Heroku
-  tags:
-  categories: rails heroku postgresql
+  tags: rails heroku postgresql
+  categories: development
 ---
 
 ## Introduction

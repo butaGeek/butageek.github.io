@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Install Cinnamon 3.0 on Ubuntu 16.04
-  tags:
-  categories: linux ubuntu cinnamon
+  tags: linux ubuntu cinnamon
+  categories: system
 ---
 ## Introduction
 

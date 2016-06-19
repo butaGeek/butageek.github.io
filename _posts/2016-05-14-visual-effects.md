@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Visual Effects
-  tags:
-  categories: html css js
+  tags: html css js
+  categories: development
 ---
 ## Introduction
 

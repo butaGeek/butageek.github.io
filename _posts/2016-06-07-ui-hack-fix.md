@@ -1,8 +1,8 @@
 ---
   layout: post
   title: UI Hack/Fix
-  tags:
-  categories: UI front-end design css js
+  tags: UI front-end design css js
+  categories: development
 ---
 
 ## Introduction

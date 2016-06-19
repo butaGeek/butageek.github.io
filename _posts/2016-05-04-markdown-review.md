@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Markdown Review
-  tags: 
-  categories: jekyll markdown
+  tags: jekyll markdown
+  categories: development
 ---
 
 ## Introduction
@@ -118,7 +118,7 @@ __bold__
 
 ## GitHub Flavored Markdown
 
-**Note** that some of them aren't part of the core Markdown spec, but they are part of GFM and Markdown on **GitHub** does support them. 
+**Note** that some of them aren't part of the core Markdown spec, but they are part of GFM and Markdown on **GitHub** does support them.
 
 ### Syntax Highlighting
 

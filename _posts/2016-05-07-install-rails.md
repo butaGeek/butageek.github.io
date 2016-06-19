@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Install Rails
-  tags:
-  categories: development ruby rails
+  tags: development ruby rails
+  categories: development
 ---
 ## Environment
 

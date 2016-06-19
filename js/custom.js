@@ -20,7 +20,7 @@ $(function() {
   $('#experience .event').addClass('wow animated fadeInUp');
   $('#project .thumbnail').addClass('wow animated fadeInUp');
   // $('#playground .demo .anime').addClass('wow animated zoomIn');
-  $('#playground .dev .anime').addClass('wow animated fadeIn');
+  // $('#playground .dev .anime').addClass('wow animated fadeIn');
   // $('#contact li').addClass('wow animated rotateIn');
 
   wow = new WOW({

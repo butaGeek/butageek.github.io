@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Run Rails on PostgreSQL
-  tags:
-  categories: rails database postgresql
+  tags: rails database postgresql
+  categories: development
 ---
 ## Introduction
 

@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Install VirtualBox Guest Additions
-  tags:
-  categories: virtualbox
+  tags: virtualbox
+  categories: software
 ---
 **On Debian**
 

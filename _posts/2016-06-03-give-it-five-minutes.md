@@ -2,7 +2,7 @@
   layout: post
   title: Give It Five Minutes
   tags:
-  categories:
+  categories: article
 ---
 
 ## Introduction

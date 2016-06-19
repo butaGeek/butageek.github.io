@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Front-end Logic
-  tags:
-  categories: front-end js css
+  tags: front-end js css
+  categories: development
 ---
 
 ## Introduction

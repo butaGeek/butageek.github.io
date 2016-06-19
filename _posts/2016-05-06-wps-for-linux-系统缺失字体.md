@@ -1,8 +1,8 @@
 ---
   layout: post
   title: wps for linux 系统缺失字体
-  tags:
-  categories: software linux wps fonts
+  tags: software linux wps fonts
+  categories: software
 ---
 
 **问题**

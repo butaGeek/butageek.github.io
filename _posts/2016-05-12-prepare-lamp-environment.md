@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Prepare LAMP Environment
-  tags:
-  categories: linux apache mysql php
+  tags: linux apache mysql php
+  categories: software
 ---
 ## Introduction
 

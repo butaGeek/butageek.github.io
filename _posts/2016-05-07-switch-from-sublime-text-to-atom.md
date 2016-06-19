@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Switch From Sublime Text to Atom
-  tags:
-  categories: software editor sublime atom
+  tags: software editor sublime atom
+  categories: software
 ---
 ## Background
 

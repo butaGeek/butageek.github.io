@@ -1,8 +1,8 @@
 ---
   layout: post
   title: Get Started with Vue.js
-  tags: 
-  categories: MVVM javascript Vue.js
+  tags: MVVM javascript Vue.js
+  categories: development
 ---
 
 ## Introduction
@@ -98,11 +98,11 @@ Fill in *index.html* as follows:
       <div class="list-group">
         <a href="#" class="list-group-item" v-for="event in events">
           <h4 class="list-group-item-heading">
-            <i class="glyphicon glyphicon-bullhorn"></i> 
+            <i class="glyphicon glyphicon-bullhorn"></i>
             {{ event.name }}
           </h4>
           <h5>
-            <i class="glyphicon glyphicon-calendar" v-if="event.date"></i> 
+            <i class="glyphicon glyphicon-calendar" v-if="event.date"></i>
             {{ event.date }}
           </h5>
           <p class="list-group-item-text" v-if="event.description">{{ event.description }}</p>
