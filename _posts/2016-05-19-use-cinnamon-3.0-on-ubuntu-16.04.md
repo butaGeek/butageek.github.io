@@ -1,6 +1,6 @@
 ---
   layout: post
-  title: Install Cinnamon 3.0 on Ubuntu 16.04
+  title: Use Cinnamon 3.0 on Ubuntu 16.04
   tags: linux ubuntu cinnamon
   categories: system
 ---
@@ -32,3 +32,10 @@ Once installed, log out and select Cinnamon from the login screen.
 When selecting "Quit" from the main menu or "Power Off" from the user dropdown in the system tray, you won't see any buttons other than "Cancel".
 
 To fix this, open "dconf Editor" and go to `org > cinnamon > desktop > session`, make sure `session-manager-uses-logind` and `settings-daemon-uses-logind` are both checked. Then logout or restart the system, you will see the buttons are back.
+
+## Uninstallation
+
+```
+$ sudo apt-get purge cinnamon
+$ sudo apt-get autoremove
+```
