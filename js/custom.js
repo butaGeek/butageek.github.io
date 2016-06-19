@@ -15,16 +15,16 @@ $(function() {
     }
   })
 
-  $('#about .anime').addClass('wow animated fadeInUp');
+  // $('#about .anime').addClass('wow animated fadeInUp');
   $('#profession .anime').addClass('wow animated fadeInUp');
   $('#experience .event').addClass('wow animated fadeInUp');
   $('#project .thumbnail').addClass('wow animated fadeInUp');
-  $('#playground .demo .anime').addClass('wow animated zoomIn');
-  $('#playground .dev .anime').addClass('wow animated fadeInUp');
-  $('#contact li').addClass('wow animated rotateIn');
+  // $('#playground .demo .anime').addClass('wow animated zoomIn');
+  $('#playground .dev .anime').addClass('wow animated fadeIn');
+  // $('#contact li').addClass('wow animated rotateIn');
 
   wow = new WOW({
-    offset: 200
+    offset: 150
   });
   wow.init();
 });
