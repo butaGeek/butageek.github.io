@@ -8,6 +8,12 @@ $(function() {
   var aboutTop = $('#about').offset().top;
 
   $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 0) {
+      $('.navbar').addClass("navbar-fixed-top");
+    } else {
+      $('.navbar').removeClass("navbar-fixed-top");
+    }
+
     if ($(this).scrollTop() > aboutTop) {
       $('#up').addClass('visible');
     } else {
