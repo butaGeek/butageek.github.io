@@ -5,8 +5,6 @@ $(function() {
     $(".navbar-collapse").collapse('hide');
   });
 
-  var aboutTop = $('#about').offset().top;
-
   $(window).on('scroll', function() {
     if ($(this).scrollTop() > 0) {
       $('.navbar').addClass("navbar-fixed-top");
@@ -14,10 +12,14 @@ $(function() {
       $('.navbar').removeClass("navbar-fixed-top");
     }
 
-    if ($(this).scrollTop() > aboutTop) {
-      $('#up').addClass('visible');
-    } else {
-      $('#up').removeClass('visible');
+    if ($('#about').length) {
+      var aboutTop = $('#about').offset().top;
+
+      if ($(this).scrollTop() > aboutTop) {
+        $('#up').addClass('visible');
+      } else {
+        $('#up').removeClass('visible');
+      }
     }
   })
 
