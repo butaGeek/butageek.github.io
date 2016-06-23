@@ -60,9 +60,38 @@ $seperator-color: #D3D7CF;
   border: 0;
   transition: all 0.4s ease;
   &.navbar-fixed-top {
-    background-color: $primary-color;
+    background-color: #fff;
+    color: #777;
     opacity: 1;
     box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    .navbar-toggle {
+      .icon-bar {
+        background-color: #777;
+      }
+      &:hover .icon-bar {
+        background-color: #333;
+      }
+      &:focus .icon-bar {
+        background-color: #333;
+      }
+    }
+    .navbar-brand {
+      color: inherit;
+      &:focus,
+      &:hover {
+        color: #333;
+      }
+    }
+    .navbar-nav {
+      li a {
+        color: inherit;
+        &:focus,
+        &:hover {
+          color: #333;
+          // background-color: inherit;
+        }
+      }
+    }
   }
   #navbar-collapse-1 {
     padding-right: 15px;
