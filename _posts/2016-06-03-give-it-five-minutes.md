@@ -5,8 +5,6 @@
   categories: article
 ---
 
-## Introduction
-
 Here's a quote of an article from [Give it five minutes](https://signalvnoise.com/posts/3124-give-it-five-minutes) by *Jason Fried*.
 
 I found it while I was surfing the React Docs on Facebook React page. <!--excerpt-->After five minutes of reading, I was totally convinced that not only programming, but also everything in your life deserves your rethink before being certain it's right or wrong.

@@ -5,8 +5,6 @@
   categories: software
 ---
 
-## Introduction
-
 [Jekyll](https://jekyllrb.com/) is a blog-aware static site generator. It's fast, simple, text-based, easy-to-use, locally stored, and more, <!--excerpt-->but, there's one drawback when creating a new post: you have to follow the strict naming standard to create a new post including the filename and the meta data within it.
 
 Here comes the rescue: [jekyll-posts-generator](https://www.npmjs.com/package/jekyll-posts-generator). It's an automation tool that does all these things automatically for you.

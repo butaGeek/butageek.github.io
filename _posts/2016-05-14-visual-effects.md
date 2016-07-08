@@ -4,7 +4,6 @@
   tags: html css js
   categories: development
 ---
-## Introduction
 
 Thanks to new [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), [CSS3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3), and [ES6](https://developer.mozilla.org/en/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) standard together with more plugins built on them,<!--excerpt--> we are able to create amazing effects and interactions when developing web applications.
 

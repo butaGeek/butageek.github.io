@@ -5,8 +5,6 @@
   categories: development
 ---
 
-## Introduction
-
 This article contains demos using css/js libraries/frameworks that illustrate how to deal with front-end logic.<!--excerpt-->
 
 ## Examples

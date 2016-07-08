@@ -4,7 +4,6 @@
   tags: linux ubuntu cinnamon
   categories: system
 ---
-## Introduction
 
 [Cinnamon](http://developer.linuxmint.com/projects.html) is a Linux desktop environment based on GTK+ 3. It was started as a fork of the [GNOME Shell](https://www.gnome.org/gnome-3/) in 2011,<!--excerpt--> but became its own desktop environment in Cinnamon 2.0.
 

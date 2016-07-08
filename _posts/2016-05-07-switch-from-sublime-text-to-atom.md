@@ -4,7 +4,6 @@
   tags: software editor sublime atom
   categories: software
 ---
-## Background
 
 I was using [Sublime Text](https://www.sublimetext.com/) 3 for all the coding stuff for a long time. There was a time that [Atom](https://atom.io/) started to get more and more attention, <!--excerpt-->and I hesitated for a while whether I should give it a shot.
 

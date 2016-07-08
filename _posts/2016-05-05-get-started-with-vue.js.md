@@ -5,8 +5,6 @@
   categories: development
 ---
 
-## Introduction
-
 [Vue.js](https://vuejs.org/) is another front-end **MVVM** (Model-View-ViewModel) inspired by AngularJS 1.x, but aiming to solve the problems in AngularJS. <!--excerpt-->It can be used as **View** only together with other back-end framework easily or work with other tool chain to build a **SPA** (Single Page Application).
 
 ## Resources

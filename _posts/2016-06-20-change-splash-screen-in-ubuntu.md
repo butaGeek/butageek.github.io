@@ -5,8 +5,6 @@
   categories: system
 ---
 
-## Introduction
-
 A [splash screen](https://en.wikipedia.org/wiki/Splash_screen) is a graphical screen that appears before a system/application is launching. <!--excerpt-->In Linux, it refers to the animation screen comes when staring up and shuting down the system.
 
 The initial bootscreen is rendered by software called Plymouth, which uses the kernel's Direct Rendering Manager (DRM) and Kernel Mode Setting (KMS) driver to show graphical animation with the native resolution of the display even before X server starts.

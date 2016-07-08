@@ -4,7 +4,6 @@
   tags: image linux terminal
   categories: software
 ---
-## Introduction
 
 [ImageMagick](http://www.imagemagick.org/script/index.php) is a command-line software suite to edit bitmap images. <!--excerpt-->In addition to basic operations like convert, resize, rotate, flip, mirror, it can also apply effects and draw text, lines, polygons, and so on.
 

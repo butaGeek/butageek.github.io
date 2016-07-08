@@ -4,7 +4,6 @@
   tags: linux apache mysql php
   categories: software
 ---
-## Introduction
 
 [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) is a model of web service solution stacks, including four oopen source components: [Linux](https://www.linux.com/), [Apache](http://www.apache.org/), [MySQL](https://www.mysql.com/), and [PHP](http://php.net/).
 <!--excerpt-->

@@ -5,8 +5,6 @@
   categories: development
 ---
 
-## Introduction
-
 This article contains front-end design hacks/fixes using css/js that makes your life easier.<!--excerpt-->
 
 ## Examples

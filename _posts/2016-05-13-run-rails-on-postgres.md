@@ -4,7 +4,6 @@
   tags: rails database postgresql
   categories: development
 ---
-## Introduction
 
 Ruby on Rails ship with a small database called [sqlite3](https://www.sqlite.org/) by default, but it's not ideal for production grade database.<!--excerpt--> [PostgreSQL](http://www.postgresql.org/) is an advanced, open source object-relational database system which has the main goal of being standards-compliant and extensible.
 

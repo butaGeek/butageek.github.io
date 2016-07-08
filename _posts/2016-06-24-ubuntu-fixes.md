@@ -5,8 +5,6 @@
   categories: system
 ---
 
-## Introduction
-
 Here is a collection of Ubuntu fixes that cover all system/software wide issues.<!--excerpt-->
 
 ## Issues
