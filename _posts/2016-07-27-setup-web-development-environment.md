@@ -5,6 +5,7 @@
   categories: system
 ---
 
+test
 Here's a full guide of configuring development environment mostly for front-end development.<!--excerpt-->
 
 ## System Environment
