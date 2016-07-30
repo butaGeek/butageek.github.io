@@ -22,73 +22,72 @@ In my case, I use Linux as main working system, meanwhile I also have Windows to
 
 ## Goal
 
-I want to install Remix OS on /dev/sda3 while using current GRUB2 in MBR to load it.
+I want to install Remix OS on `/dev/sda3` while using current GRUB2 in MBR to load it.
 
 ## Hands On
 
 ### Prepare Partition
 
-Let's boot into Windows first.
+1. Boot into Windows.
 
-We have /dev/sda3 available as Unallocated Space, so we need to format it so that Remix OS can recognize it when installing.
-
-You can use the Windows built-in Disk Management tool or whatever 3rd-party tools you like to format it in **FAT32** or **NTFS** since Remix OS support both.
-
-In my case, I only have `C:` in Windows 10, so the new partition will be `D:`.
+2. Format `/dev/sda3` as `FAT32` or `NTFS` since Remix OS support both. Here we use `NTFS`. In my case, I only have `C:` in Windows, so the new partition will be `D:`.
 
 ### Prepare Files
 
-Download Remix OS zip file from their [website](http://www.jide.com/remixos).
+1. Download Remix OS zip file from their [website](http://www.jide.com/remixos).
 
-Unzip the file and you will see a readme file, an iso file and an installation tool (an exe file which only runs on Windows).
+2. Unzip the file and you will see three files: a readme file, an iso file and an installation tool (an exe file which only runs on Windows).
 
-There is a way to even extract the iso file to manually boot from them to install, but since the offical zip file comes with the Windows version of installation tool, we are going to use it to make it easier.
+    **Note:** There is a way to even extract the iso file to manually boot from them to install, but since the offical zip file comes with the Windows version of installation tool, we are going to use it to make it easier.
 
 ### Install Remix OS
 
-Simply run the installation tool. Pick the iso file and choose the new partition you created (here it's `D:`) and install.
+1. Run the installation tool. Pick the iso file and choose the new partition (`D:`) and install.
 
-Upon finish, it'll ask you to reboot the system. Since till now Remix OS is installed under Windows, the boot menu is also subject to Windows which creates a boot up path like this: **GRUB2 -> Windows -> Remix OS**. Go ahead and follow the path to boot into Remix OS.
+2. Reboot the system into Remix OS.
 
-The first time you boot, Remix OS will prepare the disk partition and load system and applications. After that, finish the welcome wizard and that's it.
+    **Note:** Since now Remix OS is installed under Windows, the boot menu is also subject to Windows which creates a boot up path like this: `GRUB2 -> Windows -> Remix OS`. Go ahead and follow the path to boot into Remix OS.
+
+3. Now Remix OS will prepare the disk partition and load system and applications. After that, finish the welcome wizard.
 
 ### Create Boot menu
 
 Now we have Remix OS installed, we want to make a new standalone boot menu for it so that we can boot into it directly from our current GRUB2.
 
-First reboot the system into Linux.
+1. Reboot the system into Linux.
 
-Open the config file to add new entry:
+2. Open the config file to add new entry:
 
-```
-$ sudo gedit /etc/grub.d/40_custom
-```
+        $ sudo gedit /etc/grub.d/40_custom
 
-Add a new entry as follows:
+    Add a new entry as follows:
 
-```
-menuentry 'Remix OS' --class android-x86 {
-    insmod part_msdos
-    insmod ntfs
-    set root='hd0,msdos3'
-    linux /RemixOS/kernel root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive quiet SERIAL=random logo.showlogo=1 SRC=RemixOS/ DATA= CREATE_DATA_IMG=1
-    initrd /RemixOS/initrd.img
-}
-```
+        menuentry 'Remix OS' --class android-x86 {
+            insmod part_msdos
+            insmod ntfs
+            set root='hd0,msdos3'
+            linux /RemixOS/kernel root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive quiet SERIAL=random logo.showlogo=1 SRC=RemixOS/ DATA= CREATE_DATA_IMG=1
+            initrd /RemixOS/initrd.img
+        }
 
-You don't have to write it all on your own because you can copy most of the content from an existing file found at `/RemixOS/menu.lst` on the Remix OS partition.
+    **Note:** You don't have to write it all on your own because you can copy most of the content from an existing file found at `/RemixOS/menu.lst` on the Remix OS partition. Since the `menu.lst` is an old style boot menu for GRUB version 0.x and GRUB2 is using different gramma, we need to alter it like above.
 
-Since the `menu.lst` is an old style boot menu for GRUB version 0.x and GRUB2 is using different gramma, we need to alter it like above.
+    **Some explanations:**
 
-**Some explanations:**
+    * The two `insmod` command loads MBR and NTFS support.
+    * Replace `find --set-root /RemixOS/kernel` with `set root='hd0,msdos3'`. Here `hd0,msdos3` means disk 1, MBR partition table, partition 3 (/dev/sda3).
 
-* The two `insmod` command loads MBR and NTFS support.
-* Replace `find --set-root /RemixOS/kernel` with `set root='hd0,msdos3'`. Here `hd0,msdos3` means disk 1, MBR partition table, partition 3 (/dev/sda3).
+3. Save the file and run the following command to update GRUB:
 
-Save the file and run the following command to update GRUB:
+        $ sudo update-grub
 
-```
-$ sudo update-grub
-```
+4. Reboot your system and you will see a new entry called **Remix OS** in the boot menu.
 
-When finished, reboot your system and you will see a new entry called **Remix OS** in the boot menu, enjoy!
+### Clean Up
+
+There is still a `Remix OS` menu entry under Windows boot menu, we need to remove it together with those boot loader files sitting in `C:`.
+
+1. Reboot system insto Windows.
+2. Download and install a tool called [**EasyBCD**](http://neosmart.net/EasyBCD/).
+3. Go to **Edit Boot Menu** and delete `Remix OS` entry.
+4. Go to `C:` drive, delete following files that Remix OS installation tool created: `remixos_install.log`, `ubnldr`, `ubnldr.exe`, `ubnldr.mbr`.
